@@ -1,0 +1,115 @@
+:root{
+    /*Color theme powered by Coolor*/
+    --alice-blu:#E3F2FD;
+    --dark-mint:#26532B;
+    --light-mint:#399E5A;
+    --piss-yellow:#F7CB15;
+    --seasalt:#FAFAFA;
+
+}
+
+* {
+    color:black;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body { 
+    height: 100%;
+    width:100%;
+
+}
+
+header{
+    /*Theme|Color|Fancy Stuff*/
+    background-color: var(--dark-mint);
+    border-radius:0 0 10px 10px;
+    border-bottom: 5px solid var(--alice-blu);/*top-right top-left bottom-right bottom-left*/  
+
+    /*Dimensions*/
+    height: 10%;
+    width: 100%;
+
+    /*Posistion|Display*/
+    display: flex;
+    position: fixed;
+
+        
+}
+
+
+.duck-img-tup{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+    /*border: solid 3px silver;*/
+}
+
+
+.duck-img{
+     padding: 0 10px 0 0; /*padding-top, padding-right, padding-bottom, padding-left*/
+    /*border: solid 2px lime;*/
+}
+
+.duck-img img{
+    border-radius: 0 0 0 10px;
+    border-right: solid 1px ;
+ }
+
+.header-tup{
+    /*Posistion|Display*/
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+
+    /*Dimensions*/
+    height: 10%;
+    width: 100%;
+
+    /*Element Overflow Control*/
+    overflow: hidden;
+
+    /*The below code is used to see what our box looks like*/
+    /*border: solid 2px blue;*/
+}
+
+.nav-container{
+    /*Display*/
+    display:flex;
+    align-items: center;
+
+    /*The below code is used to see what our box looks like*/
+    /*border: dotted gold;*/
+}
+
+/*The way we centered our nav was by setting our main container, .header as display:flex. We then aligned our main axis with justify-content:flex-end aka to the right of our .header. We then went made our .nav-container and aligned our cross axis with align-items:center aka to the middle of or .nav-container*/
+
+#grad-tup{
+    border: solid 2px grey;
+    width:0px;
+}
+
+.header-tup ul li{
+    display: inline-block;
+    margin: 0px 15px 0px 15px;/* margin-top, margin-right, margin-bottom, margin-left*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--alice-blu);
+    /*border: solid 1px white;*/
+}
+
+body{
+    background-color: var(--light-mint);
+}
+/*
+-make sure to add media quieries
+-gradient: use the linear gradient function
+-look up transitioning property to get the glowing movement
+-How can we use psuedo classes
+-In the future make sure you add unique names to repos
+
+*/
