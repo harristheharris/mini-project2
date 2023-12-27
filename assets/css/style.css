@@ -19,8 +19,17 @@
 html, body { 
     height: 100%;
     width:100%;
+    
 
 }
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--light-mint);
+} 
 
 header{
     /*Theme|Color|Fancy Stuff*/
@@ -35,6 +44,7 @@ header{
     /*Posistion|Display*/
     display: flex;
     position: fixed;
+    z-index: 3;
 
         
 }
@@ -85,6 +95,17 @@ header{
     /*border: solid 2px blue;*/
 }
 
+.ul-fix{
+    display:flex;
+    flex-direction: row;
+}
+
+#t-tracks{
+    position: relative;
+    right: 3.85em;
+    margin-bottom: 3px;
+}
+
 .nav-container{
     /*Display*/
     display:flex;
@@ -125,9 +146,111 @@ header{
     /*border: solid 1px white;*/
 }
 
-body{
-    background-color: var(--light-mint);
+.ttl-crd{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: %;
+    
+    margin-bottom: 0px;
 }
+
+#cute-border{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left:solid 4px var(--alice-blu);
+    border-right:solid 4px var(--alice-blu);
+    border-top:solid 4px var(--alice-blu);
+    border-radius: 30px 30px 0px 0px;/*top-right top-left bottom-right bottom-left*/ 
+    height: 10em;
+    width: 50%;
+    z-index: 1;
+}
+
+
+
+main {
+    margin:0;
+    position: absolute;
+    top: 15%;
+    z-index: 2;
+    width: 100%;
+
+}
+
+main h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    
+    margin-bottom:10px;
+    /*border: solid 1px wheat;*/
+}
+
+main #orng-choco{
+    display: flex;
+    justify-content: center;
+    /*border: solid 1px wheat;*/
+    
+}
+
+.main-tup{
+    margin: 1px;
+    height: auto;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid 5px var(--dark-mint);
+    background-color: #41B467;
+    border-radius: 25px 0px 0px 0px;/*top-left top-right bottom-right bottom-left*/ 
+    box-shadow: 3px 5px #153C23 ;
+
+
+}
+
+.sub-tup{  
+    position: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background-color: #359759;
+    border: solid 4px var(--seasalt);
+    border-radius: 20px 0px 0px 0px;
+    margin: 25px 15px 20px 15px;/* margin-top, margin-right, margin-bottom, margin-left*/
+    height:12.0rem;
+    width:25%;
+    
+}
+
+.sub-tup-header{
+    background-color: #359759;
+    border-bottom: dotted 4px var(--seasalt);
+    border-radius: 20px 0px 0px 0px;
+    width:100%;
+    height:2.0rem;
+
+}
+
+.test-tup{
+    flex: 2 1 auto;
+    border: solid 5px var(--seasalt);
+    margin:0;/* margin-top, margin-right, margin-bottom, margin-left*/
+    height:12.0rem;
+    width:25%;
+}
+
+/*Legacy Code lol
+.hidden {
+  text-align: right;
+    border: solid 2px black ;
+}
+*/
+
+
+
+
+
+
 /*
 -make sure to add media quieries
 -gradient: use the linear gradient function
