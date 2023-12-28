@@ -16,20 +16,27 @@
 
 }
 
-html, body { 
-    height: 100%;
-    width:100%;
-    
-
-}
-
 html {
     font-size: 16px;
+    width:100%;
+    height: 100%;
 }
 
 body {
-    background-color: var(--light-mint);
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom:solid 5px var(--dark-mint);
+    /*background-color: var(--light-mint);*/
+    /*border: solid 10px black;*/
+    z-index: index 4;
 } 
+
+.grad-back{
+    background: linear-gradient(180deg, #33703A 1%, #5BC27E 90%  );
+    background-repeat: no-repeat;   
+}
 
 header{
     /*Theme|Color|Fancy Stuff*/
@@ -146,13 +153,22 @@ header{
     /*border: solid 1px white;*/
 }
 
+
+main {
+    margin-top:6em;
+    position:relative;
+    z-index: 2;
+    width: 100%;
+    border-bottom:solid 5px var(--dark-mint);
+    box-shadow: 10px 50px white;
+
+}
+
 .ttl-crd{
     display: flex;
     justify-content: center;
-    text-align: center;
-    height: %;
-    
-    margin-bottom: 0px;
+    text-align: center;    
+    margin-bottom:0px;
 }
 
 #cute-border{
@@ -163,31 +179,25 @@ header{
     border-right:solid 4px var(--alice-blu);
     border-top:solid 4px var(--alice-blu);
     border-radius: 30px 30px 0px 0px;/*top-right top-left bottom-right bottom-left*/ 
+    background-color:#359759 ;
     height: 10em;
     width: 50%;
     z-index: 1;
 }
 
-
-
-main {
-    margin:0;
-    position: absolute;
-    top: 15%;
-    z-index: 2;
-    width: 100%;
-
-}
-
 main h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.5rem;
-    
     margin-bottom:10px;
     /*border: solid 1px wheat;*/
 }
 
-main #orng-choco{
+.orng-choco{
+    padding-bottom: 4em;
+    /*border: solid 1px wheat;*/
+}
+
+main .orng-choco{
     display: flex;
     justify-content: center;
     /*border: solid 1px wheat;*/
@@ -205,6 +215,7 @@ main #orng-choco{
     background-color: #41B467;
     border-radius: 25px 0px 0px 0px;/*top-left top-right bottom-right bottom-left*/ 
     box-shadow: 3px 5px #153C23 ;
+    background: radial-gradient(var(--light-mint), var(--dark-mint) );
 
 
 }
@@ -219,16 +230,19 @@ main #orng-choco{
     margin: 25px 15px 20px 15px;/* margin-top, margin-right, margin-bottom, margin-left*/
     height:12.0rem;
     width:25%;
-    
 }
 
 .sub-tup-header{
-    background-color: #359759;
+    background-color: ;
     border-bottom: dotted 4px var(--seasalt);
     border-radius: 20px 0px 0px 0px;
     width:100%;
     height:2.0rem;
 
+}
+
+.sub-tup:hover{
+    background-color:;
 }
 
 .test-tup{
@@ -239,17 +253,30 @@ main #orng-choco{
     width:25%;
 }
 
+.footer-tup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 4em;
+    z-index: 5;
+    background-color: #4DD15C;  
+}
+
+.footer-tup h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
 /*Legacy Code lol
 .hidden {
   text-align: right;
     border: solid 2px black ;
 }
 */
-
-
-
-
-
 
 /*
 -make sure to add media quieries
