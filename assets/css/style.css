@@ -213,7 +213,7 @@ main .orng-choco{
     height: auto;
     width: 98%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     background-color:#359759 ;
     background: linear-gradient(180deg, #3AA662 10%,   #2D6233 90%);
@@ -234,13 +234,19 @@ main .orng-choco{
 
 }
 
+.main-sub-tup{
+    display: flex;
+    flex-direction: row;
+
+}
+
 .sub-tup{  
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    margin: 25px 15px 20px 15px;/* margin-top, margin-right, margin-bottom, margin-left*/
+    margin: 25px 15px 20px 10px;/* margin-top, margin-right, margin-bottom, margin-left*/
     height:12.0rem;
-    width:25%;
+    width: auto;
     border: solid 4px var(--alice-blu);
     border-radius: 20px 20px 0px 0px;/*top-right top-left bottom-right bottom-left*/ 
     background-color: var(--dark-mint);
@@ -342,7 +348,7 @@ main .orng-choco{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--seasalt);
     /*border: solid 1px slategrey;*/
-    line-height: 2em;
+    line-height: 1.5em;
     padding-left: 1em;
 }
 
@@ -408,7 +414,8 @@ main .orng-choco{
 }
 
 @media screen and (max-width: 768px){
-    .sub-tup{
+    .main-sub-tup{
+        display: inline;
         
     }
 }
