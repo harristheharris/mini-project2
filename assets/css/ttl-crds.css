@@ -1,0 +1,63 @@
+/*soley exist to make screen shot images for the title cards with wanted font and background color*/
+
+body {
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom:solid 5px var(--dark-mint);
+    /*background-color: var(--light-mint);*/
+    /*border: solid 10px black;*/
+    z-index: index 4;
+}
+
+.main-tup{
+    margin: 1px;
+    height: auto;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#359759 ;
+    background: linear-gradient(180deg, #3AA662 10%,   #2D6233 90%);
+    border-style: solid;
+    border-width: 0px 3px 0px 3px;
+    border-radius: 0px 0px 0px 0px;/*top-left top-right bottom-right bottom-left*/
+    border: solid 3px var(--dark-mint);
+
+    border-image: 
+    linear-gradient(
+      to bottom, 
+     var(--dark-mint), #31874D ) 1 100%;
+    
+    /*box-shadow: 3px 5px #153C23 ;*/
+    /*background: linear-gradient(180deg, #0B992C 10%, var(--light-mint) 80% );*/
+    /*border: solid 5px var(--dark-mint);*/
+    /*background-color: #41B467;*/
+    z-index: 2;
+}
+
+.sub-tup{  
+    position: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 25px 15px 20px 15px;/* margin-top, margin-right, margin-bottom, margin-left*/
+    height:12.0rem;
+    width:25%;
+    border: solid 4px var(--alice-blu);
+    border-radius: 20px 20px 0px 0px;/*top-right top-left bottom-right bottom-left*/ 
+    background-color: var(--dark-mint);
+
+    /*
+    box-shadow: 4px 4px #153C23;
+    */
+}
+
+.sub-tup-header{
+    
+    border-bottom: dotted 4px var(--light-mint);
+    border-radius: 20px 0px 0px 0px;
+    width:100%;
+    height:2.0rem;
+    background-color: ;
+}
